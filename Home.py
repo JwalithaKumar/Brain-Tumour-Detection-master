@@ -38,7 +38,7 @@ components.html(
 )
 
 
- st.markdown("##Brain Tumor Check")
+
 def page_layout():
    
     st.write("Brain Tumor Check is an app developed by Students Of SVEC that takes an image as input and predicts the type of tumor, using CNN and MRIs of the patients. This Web app uses advanced algorithms to diagnose various tumors and classify them into brain")
