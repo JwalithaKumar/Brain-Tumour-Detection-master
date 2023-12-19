@@ -5,7 +5,7 @@ import random
 import streamlit.components.v1 as components
 
 st.set_page_config(
-    page_title="Brain Tumor Clasiifier",
+    page_title="Brain Tumor Detector & Classifier",
     page_icon=":dna:",
     initial_sidebar_state="expanded",
 )
