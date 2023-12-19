@@ -24,7 +24,7 @@ components.html(
             top: 0px;
             right: 25%;
             position: fixed;
-            background: -webkit-linear-gradient(0.25turn,pink,black);
+            background: -webkit-linear-gradient(0.25turn,yellow,black);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
