@@ -17,36 +17,6 @@ st.write('<style>div.row-widget.stMarkdown { font-size: 24px; }</style>', unsafe
 
 
 
-
-
-# Define page layout
-components.html(
-    """
-    <style>
-        #effect{
-            margin:0px;
-            padding:0px;
-            font-family: "Source Sans Pro", sans-serif;
-            font-size: max(8vw, 20px);
-            font-weight: 700;
-            top: 0px;
-            left: 0px;
-            position: fixed;
-            background: -webkit-linear-gradient(0.25turn,#20D2FE, #5292FE);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p{
-            font-size: 2rem;
-        }
-    </style>
-    <p id="effect">We are</p>
-    """,
-    height=69,
-)
-
-
-# Add BrainVision description
 st.markdown("## Brain Tumor Detector & classifier")
 st.write("Introducing our Brain Tumor Detector & classifier app, a cutting-edge solution harnessing advanced artificial intelligence. This innovative application utilizes machine learning algorithms to analyze medical imaging, swiftly identifying potential brain tumors with high accuracy. Empowering healthcare professionals, our app facilitates early detection, enhancing treatment outcomes and saving lives.")
 
