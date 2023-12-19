@@ -5,7 +5,7 @@ import random
 import streamlit.components.v1 as components
 
 st.set_page_config(
-    page_title="BrainVision AI",
+    page_title="Brain Tumor Clasiifier",
     page_icon=":dna:",
     initial_sidebar_state="expanded",
 )
@@ -35,18 +35,18 @@ components.html(
             font-size: 2rem;
         }
     </style>
-    <p id="effect">BrainVision AI</p>
+    <p id="effect">Brain Tumor Detector & Classifier</p>
     """,
     height=69,
 )
 uploaded_file = None
 
-st.title("Brain Tumor Predictor")
+st.title("Brain Tumor Detector & Classifier")
 
 st.write('<style>div.row-widget.stMarkdown { font-size: 24px; }</style>', unsafe_allow_html=True)
 
 
-st.write("""There are several types of brain tumors, including:
+st.write("""Types of Tumor:
 
 Glioma: A type of tumor that originates in the glial cells, which are the supportive cells in the brain. Gliomas can be either low-grade (slow-growing) or high-grade (fast-growing) and can affect different parts of the brain.
 
@@ -63,7 +63,7 @@ uploaded_file = st.file_uploader("Choose a File", type=['jpg','png','jpeg'])
 
 if uploaded_file!=None:
     st.image(uploaded_file)
-x = st.button("Predict")
+x = st.button("Lets Predict")
 if x:
     with st.spinner("Predicting..."):
         y,conf = imagerec.imagerecognise(uploaded_file,"Models/BrainTumuorModel.h5","Models/BrainTumuorLabels.txt")
@@ -79,7 +79,7 @@ if x:
                 font-family: "Source Sans Pro", sans-serif;
             }
             </style>
-            <h1>It is Negative for Brain Tumors</h1>
+            <h1>You don't have a tumor.</h1>
             """
         )
     elif y.strip() == "Glioma":
@@ -93,7 +93,7 @@ if x:
                 font-family: "Source Sans Pro", sans-serif;
             }
             </style>
-            <h1>Glioma Positive</h1>
+            <h1>You are diagnosed with Glioma</h1>
             """
         )
         st.write("Don't worry! For glioma treatment, radiation therapy is often used after surgery. The radiation kills any glioma cells that might remain after surgery. Radiation is often combined with chemotherapy. Radiation therapy might be the first glioma treatment if surgery isn't an option.")
@@ -109,7 +109,7 @@ if x:
                 font-family: "Source Sans Pro", sans-serif;
             }
             </style>
-            <h1>Meningioma Positive</h1>
+            <h1>You are diagnosed with Meningioma</h1>
             """
         )
         st.write("Surgery is the most common type of treatment, but it can be difficult if the tumor is near a delicate part of the brain or spinal cord. Radiation therapy is also commonly used. The blood-brain barrier, which normally protects the brain and spinal cord from damaging chemicals, also keeps out many types of chemotherapy")
@@ -125,7 +125,7 @@ if x:
                 font-family: "Source Sans Pro", sans-serif;
             }
             </style>
-            <h1>Pituitary Tumor Found</h1>
+            <h1>Pituitary Tumor Found in your MRI</h1>
             """
         )
         st.write('Treatment of pituitary carcinomas is palliative, to relieve symptoms and improve the quality of life. Treatment may include the following: Surgery (transsphenoidal surgery or craniotomy) to remove the cancer, with or without radiation therapy. Drug therapy to stop the tumor from making hormones')
