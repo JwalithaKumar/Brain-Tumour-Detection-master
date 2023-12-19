@@ -13,9 +13,9 @@ st.markdown(""" <style>
 footer {visibility: hidden;}
 </style> """, unsafe_allow_html=True)
 
-
+ st.markdown("##Brain Tumor Check")
 def page_layout():
-    st.markdown("##Brain Tumor Check")
+   
     st.write("Brain Tumor Check is an app developed by Students Of SVEC that takes an image as input and predicts the type of tumor, using CNN and MRIs of the patients. This Web app uses advanced algorithms to diagnose various tumors and classify them into brain")
     st.write("Developed By SVEC")
     st.markdown("## Benefits:")
