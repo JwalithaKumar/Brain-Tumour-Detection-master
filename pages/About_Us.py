@@ -4,7 +4,7 @@ import streamlit.components.v1 as components
 
 # Set page title
 st.set_page_config(
-    page_title="BrainVision AI | About Us",
+    page_title="Brain Tumor Detector | We are...",
     page_icon=":brain:",
     initial_sidebar_state="expanded",
 )
@@ -40,15 +40,14 @@ components.html(
             font-size: 2rem;
         }
     </style>
-    <p id="effect">About Us</p>
+    <p id="effect">We are</p>
     """,
     height=69,
 )
 
-st.image("https://scitechdaily.com/images/3D-Brain-Illustration.gif")
 
 # Add BrainVision description
 st.markdown("## BrainVision")
-st.write("BrainVision is an app that uses AI and machine learning to detect diseases from images uploaded by users. Our goal is to make healthcare more accessible and affordable by providing a fast, accurate, and reliable diagnosis tool. We believe that technology can revolutionize the way we approach healthcare, and we're excited to be at the forefront of this innovation.")
+st.write("Introducing our Brain Tumor Detector app, a cutting-edge solution harnessing advanced artificial intelligence. This innovative application utilizes machine learning algorithms to analyze medical imaging, swiftly identifying potential brain tumors with high accuracy. Empowering healthcare professionals, our app facilitates early detection, enhancing treatment outcomes and saving lives.")
 
 
