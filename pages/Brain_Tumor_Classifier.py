@@ -5,7 +5,7 @@ import random
 import streamlit.components.v1 as components
 
 st.set_page_config(
-    page_title="Brain Tumor Detector & Classifier",
+    page_title="Brain Tumor Classification",
     page_icon=":dna:",
     initial_sidebar_state="expanded",
 )
@@ -18,7 +18,7 @@ footer {visibility: hidden;}
 
 uploaded_file = None
 
-st.title("Brain Tumor Detector & Classifier")
+st.title("Brain Tumor Classification")
 
 st.write('<style>div.row-widget.stMarkdown { font-size: 24px; }</style>', unsafe_allow_html=True)
 
