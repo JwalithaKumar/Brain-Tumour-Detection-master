@@ -3,7 +3,7 @@ import streamlit.components.v1 as components
 
 # Set page title
 st.set_page_config(
-    page_title="BrainVision AI",
+    page_title="Brain Tumor Detection and Classification",
     page_icon="🧠",
     initial_sidebar_state="expanded",
 )
@@ -33,7 +33,7 @@ components.html(
             font-size: 2rem;
         }
     </style>
-    <p id="effect">BrainVision AI</p>
+    <p id="effect">Brain Tumor Detection and Classification</p>
     """,
     height=69,
 )
@@ -41,8 +41,7 @@ components.html(
 
 def page_layout():
     st.write("BrainVision is an app that combines various ML models into one in order to determine if you have a disease, using CNN and MRIs of the patients. The app uses advanced algorithms to diagnose various diseases related to brain")
-    
-    st.image("https://media.tenor.com/zP2FVpaCZMkAAAAC/brain-big-brain.gif")
+    st.write("Developed By SVEC")
     st.markdown("## Benefits:")
     st.write("- Fast and accurate diagnosis of diseases")
     st.write("- Non-invasive and painless diagnosis using MRI")
@@ -52,7 +51,7 @@ def page_layout():
     st.write("- The app uses CNN on MRI imagery to diagnose diseases")
     st.write("- BrainVision uses advanced algorithms to provide fast and accurate diagnosis")
     st.markdown("## Relevance:")
-    st.write("- BrainVision can diagnose various diseases, such as brain tumor")
+    st.write("- Our App can diagnose various diseases, such as brain tumor")
     st.write("- The app can be used by doctors, hospitals, and patients")
     st.write("- BrainVision can improve the accuracy and speed of disease diagnosis")
     st.markdown("## Uses:")
