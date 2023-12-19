@@ -47,7 +47,7 @@ components.html(
 
 
 # Add BrainVision description
-st.markdown("## BrainVision")
-st.write("Introducing our Brain Tumor Detector app, a cutting-edge solution harnessing advanced artificial intelligence. This innovative application utilizes machine learning algorithms to analyze medical imaging, swiftly identifying potential brain tumors with high accuracy. Empowering healthcare professionals, our app facilitates early detection, enhancing treatment outcomes and saving lives.")
+st.markdown("## Brain Tumor Detector & classifier")
+st.write("Introducing our Brain Tumor Detector & classifier app, a cutting-edge solution harnessing advanced artificial intelligence. This innovative application utilizes machine learning algorithms to analyze medical imaging, swiftly identifying potential brain tumors with high accuracy. Empowering healthcare professionals, our app facilitates early detection, enhancing treatment outcomes and saving lives.")
 
 
