@@ -12,6 +12,31 @@ st.markdown(""" <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 </style> """, unsafe_allow_html=True)
+components.html(
+    """
+    <style>
+        #effect{
+            margin:0px;
+            padding:0px;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: max(8vw, 20px);
+            font-weight: 700;
+            top: 0px;
+            right: 25%;
+            position: fixed;
+            background: -webkit-linear-gradient(0.25turn,blue,white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p{
+            font-size: 2rem;
+        }
+    </style>
+    <p id="effect">Brain Tumor Check</p>
+    """,
+    height=69,
+)
+
 
  st.markdown("##Brain Tumor Check")
 def page_layout():
