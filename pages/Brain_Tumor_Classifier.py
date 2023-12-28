@@ -40,7 +40,7 @@ uploaded_file = st.file_uploader("Choose a File", type=['jpg','png','jpeg'])
 
 if uploaded_file!=None:
     st.image(uploaded_file)
-x = st.button("Lets Predict")
+x = st.button("Predict chei")
 if x:
     with st.spinner("Predicting..."):
         y,conf = imagerec.imagerecognise(uploaded_file,"Models/BrainTumuorModel.h5","Models/BrainTumuorLabels.txt")
